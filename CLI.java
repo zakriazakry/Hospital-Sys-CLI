@@ -206,7 +206,6 @@ public class CLI {
         HospatilManager.makeAppointment(doctorId, patientId, appointmentDate);
     }
 
-
     private void clear() {
         for (int i = 0; i < 45; ++i) {
             System.out.println();
