@@ -21,6 +21,8 @@ It is a simple system that manages appointments, doctors, and patients at the sa
 - List All Patients
 - List doctors by Patient
 - Make Appointment
+- Generate Fake Doctors for test
+- Generate Fake Patient for test
 
 
 ## Used By

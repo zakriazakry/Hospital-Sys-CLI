@@ -65,7 +65,7 @@ public class Patient {
 
     public String toString() {
 
-        return id
-                + " " + name.getFullName() + " " + " " + phone  + " " + birthDate +"\n";
+        return "ID : "+  id
+                + " Name : " + name.getFullName() + " Phone : " + phone  + " Birth Date" + birthDate +"\n";
     }
 }

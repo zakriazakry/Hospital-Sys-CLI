@@ -19,6 +19,7 @@ public class Creator {
 
         return new Doctor(id, name, email, phone, price, date);
     }
+
     public Patient createPatientInstance() {
         int id = insertID();
         Name name = insertName();
@@ -32,21 +33,21 @@ public class Creator {
         System.out.print("Enter ID: ");
         while (!_scanner.hasNextInt()) {
             System.out.println("Invalid input");
-            _scanner.next(); 
+            _scanner.next();
         }
         int id = _scanner.nextInt();
-        _scanner.nextLine(); 
+        _scanner.nextLine();
         return id;
     }
-    
+
     public int insertID(String value) {
-        System.out.print("Enter "+ value +" ID: ");
+        System.out.print("Enter " + value + " ID: ");
         while (!_scanner.hasNextInt()) {
             System.out.println("Invalid input");
-            _scanner.next(); 
+            _scanner.next();
         }
         int id = _scanner.nextInt();
-        _scanner.nextLine(); 
+        _scanner.nextLine();
         return id;
     }
 
@@ -86,7 +87,7 @@ public class Creator {
                 value = _scanner.nextDouble();
                 isValidInput = true;
             } catch (Exception e) {
-            System.out.println("Invalid input");
+                System.out.println("Invalid input");
                 _scanner.nextLine();
             }
         } while (!isValidInput);
@@ -99,7 +100,7 @@ public class Creator {
         int day = insertDay();
         return new Date(year, month, day);
     }
-    
+
     public Date insertDate(String value) {
         System.out.println(value);
         int year = insertYear();
@@ -113,7 +114,7 @@ public class Creator {
         do {
             System.out.print("Enter Year: ");
             while (!_scanner.hasNextInt()) {
-            System.out.println("Invalid input");
+                System.out.println("Invalid input");
                 _scanner.next();
             }
             year = _scanner.nextInt();
@@ -126,8 +127,8 @@ public class Creator {
         do {
             System.out.print("Enter Month [1 - 12]: ");
             while (!_scanner.hasNextInt()) {
-            System.out.println("Invalid input");
-                _scanner.next(); 
+                System.out.println("Invalid input");
+                _scanner.next();
             }
             month = _scanner.nextInt();
         } while (month < 1 || month > 12);
@@ -139,11 +140,22 @@ public class Creator {
         do {
             System.out.print("Enter Day [1 - 31]: ");
             while (!_scanner.hasNextInt()) {
-            System.out.println("Invalid input");
+                System.out.println("Invalid input");
                 _scanner.next();
             }
             day = _scanner.nextInt();
         } while (day < 1 || day > 31);
         return day;
+    }
+
+    public  int insertCount(String value) {
+        System.out.print("Enter the "+value+" Count : ");
+        while (!_scanner.hasNextInt()) {
+            System.out.println("Invalid input");
+            _scanner.next();
+        }
+        int count = _scanner.nextInt();
+        _scanner.nextLine();
+        return count;
     }
 }

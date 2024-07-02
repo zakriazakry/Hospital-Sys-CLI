@@ -3,9 +3,11 @@ import java.util.*;
 public class CLI {
     private ArrayList<KeyValue> myService = new ArrayList<>();
     Creator _create ;
+    GenerateMe _generateMe;
     public CLI() {
         myService = new ArrayList<>();
         _create = new Creator();
+        _generateMe = new GenerateMe();
         //========== [ HELPER Start ] ============ 
         myService.add(new KeyValue("h", () -> help()));
         myService.add(new KeyValue("help", () -> help()));
@@ -56,6 +58,10 @@ public class CLI {
             doctor.printpatientList();
         }
         ));
+        myService.add(new KeyValue("Generate fake Doctors", () -> {
+            _generateMe.generatorDoctors(_create.insertCount("Doctors"));
+        }));
+
         //-----------------[ Doctor End ]-----------------------
 
         //----------------[ Patient Starting ]------------------
@@ -104,6 +110,9 @@ public class CLI {
             patient.printpatientList();
         }
         ));
+        myService.add(new KeyValue("Generate fake Patient", () -> {
+            _generateMe.generatorPatients(_create.insertCount("Patient"));
+        }));
         //------------------------
         myService.add(new KeyValue("Make Appointment", () -> makeAppointment()));
         myService.add(new KeyValue("cls", () -> clear()));

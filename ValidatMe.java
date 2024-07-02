@@ -48,10 +48,11 @@ public class ValidatMe {
     }
     public boolean isPhone() {
         for (char c : content.toCharArray()) {
-            if (!Character.isDigit(c) && c != '-' && c != '+' && c != ' ' && c != '(' && c != ')') {
+            if (!Character.isDigit(c) || content.length() != 10 || c == '-' || c == ' ' || c == '+' ||  c == '(' || c == ')') {
                 return false;
             }
         }
         return true;
     }
+
 }

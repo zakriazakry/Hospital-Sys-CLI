@@ -89,8 +89,8 @@ public class Doctor {
     }
 
     public String toString() {
-        return id
-                + " " + name.getFullName() + " " + email + " " + phone  + " " + priceService + " LYD"+"\n";
-    }
+        return " ID : "+id + "Name : "+name.getFullName()+ 
+         " and Email : "+email+ " Phone : "+phone +" price service : "+ priceService + " LYD"+"\n";
+   }
 
 }
