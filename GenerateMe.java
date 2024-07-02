@@ -13,7 +13,7 @@ public class GenerateMe {
     }
     public void generatorPatients(int count) {
         for (int i = 0; i < count; i++) {
-            Name name = new Name("dr. Ali" + i);
+            Name name = new Name("Patient " + i+1);
             String phone = "0942667816";
             Date birthDate = new Date(19 + i, i % 12, 1);
             Patient patient = new Patient(i+1, name, phone, birthDate);
