@@ -10,7 +10,7 @@ public class CLI {
         _generateMe = new GenerateMe();
         //========== [ HELPER Start ] ============ 
         myService.add(new KeyValue("h", () -> help()));
-        myService.add(new KeyValue("help", () -> help()));
+        myService.add(new KeyValue("Help", () -> help()));
         //========== [ HELPER End ] ============ 
         //-------------------------[ Doctor Starting ]--------------------------------------
         myService.add(new KeyValue("Add Doctor", () -> 

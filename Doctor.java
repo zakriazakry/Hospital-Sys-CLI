@@ -53,7 +53,8 @@ public class Doctor {
     }
     public void printpatientList() {
         for (Appointment appointment : appointments) {
-            System.out.println( "Patient : " + appointment.getPatient().getName().getFullName() + " , Time : "+appointment.getAppointmentDate().toString());
+            // System.out.println( "Patient : " + appointment.getPatient().getName().getFullName() + " , Time : "+appointment.getAppointmentDate().toString());
+            System.out.println(appointment.toString());
         }
     }
 
