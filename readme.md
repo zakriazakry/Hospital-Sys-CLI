@@ -4,7 +4,7 @@
 # HOSPITAL MANGMENT SYSTEM [CLI]
 
 It is a simple system that manages appointments, doctors, and patients at the same time and is easy to use
-## Features
+## Commands
 
 ### Help
 
@@ -38,6 +38,16 @@ It is a simple system that manages appointments, doctors, and patients at the sa
 
 ## Installation
 
+How to install This System
+
+```bash
+  git clone https://github.com/zakriazakry/Hospital-Sys-CLI.git
+```
+
+and enjoy!👍
+
+## run
+
 How to run My System
 
 ```bash
@@ -51,3 +61,7 @@ Or run runner.bat
 This application project is devolped by :
 
 - Zakaria Nasser Zakri
+
+## Project  in Github
+
+- [@click here](https://github.com/zakriazakry/Hospital-Sys-CLI)
