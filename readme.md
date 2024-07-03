@@ -1,9 +1,17 @@
 # Hi, I'm zakria! 👋
 
-
-# HOSPITAL MANGMENT SYSTEM [CLI]
+# HOSPITAL MANGMENT SYSTEM [CLI] `v1.0`
 
 It is a simple system that manages appointments, doctors, and patients at the same time and is easy to use
+## Features
+- Name class
+- Date class
+- KeyValue Class to make the code is Easy to maintenance
+- Auto Generator
+- Perfect Validation
+- crud operations
+- simple to use
+
 ## Commands
 
 ### Help
@@ -65,3 +73,5 @@ This application project is devolped by :
 ## Project  in Github
 
 - [@click here](https://github.com/zakriazakry/Hospital-Sys-CLI)
+
+plz check to last versions in github
